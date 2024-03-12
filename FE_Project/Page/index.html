@@ -21,6 +21,11 @@
     <link rel="stylesheet" type="text/css" href="/Semantic-UI-master/dist/components/icon.css">
     <link rel="stylesheet" type="text/css" href="/Semantic-UI-master/dist/components/sidebar.css">
     <link rel="stylesheet" type="text/css" href="/Semantic-UI-master/dist/components/transition.css">
+    <link rel="stylesheet" type="text/css" href="/Semantic-UI-master/dist/components/popup.css"> 
+    <link rel="stylesheet" type="text/css" href="/Semantic-UI-master/dist/components/table.css">
+    
+    <script src="/Semantic-UI-master/examples/assets/library/iframe-content.js"></script>
+    <script type="text/javascript" src="/Semantic-UI-master/dist/components/popup.js"></script>
     <script src="/Semantic-UI-master/examples/assets/library/jquery.min.js"></script>
     <script src="/Semantic-UI-master/dist/components/visibility.js"></script>
     <script src="/Semantic-UI-master/dist/components/sidebar.js"></script>
@@ -133,12 +138,14 @@
             $('.ui.sidebar')
               .sidebar('attach events', '.toc.item')
             ;
-      
           })
         ;
         </script>
 </head>
 <body>
+  <div class="ui hidden message">
+    <p>You can't see me</p>
+  </div>
     <div class="ui large top fixed hidden menu">
         <div class="ui container">
           <a class="active item">Home</a>
